@@ -7,7 +7,7 @@ import pdfkit
 app = Flask(__name__)
 
 # Path ke wkhtmltopdf (sesuaikan path dengan instalasi Anda)
-path_wkhtmltopdf = 'wkhtmltopdf/bin/wkhtmltopdf' # Sesuaikan path jika berbeda
+path_wkhtmltopdf = '/wkhtmltopdf/bin/wkhtmltopdf.exe' # Sesuaikan path jika berbeda
 config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
 
 @app.route('/')
